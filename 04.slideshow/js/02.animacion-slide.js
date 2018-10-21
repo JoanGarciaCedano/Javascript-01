@@ -8,9 +8,7 @@ var p = {
 	item : 0,
 	cajaSlide : document.querySelector("#slide ul"),
 	animacionSlide : "fade",
-	imgSlide : document.querySelectorAll("#slide ul li"),
-	avanzar : document.querySelector("#slide #avanzar"),
-	retroceder : document.querySelector("#slide #retroceder")
+	imgSlide : document.querySelectorAll("#slide ul li")
 
 }
 
@@ -29,41 +27,10 @@ var m = {
 
 		}
 
-		p.avanzar.addEventListener("click", m.avanzar);
-		p.retroceder.addEventListener("click", m.retroceder);
-
 	},
 	paginacionSlide : function(item){
 
 		p.item = item.target.parentNode.getAttribute("item")-1;
-
-		m.movimientoSlide(p.item);
-
-	},
-	avanzar: function(){
-
-		if(p.item == p.imgSlide.length-1){
-
-			p.item = 0;
-
-		}else {
-			
-			p.item++;
-		}
-
-		m.movimientoSlide(p.item);
-
-	},
-	retroceder : function(){
-
-		if(p.item == 0){
-
-			p.item = p.imgSlide.length-1;
-
-		}else {
-			
-			p.item--;
-		}
 
 		m.movimientoSlide(p.item);
 
