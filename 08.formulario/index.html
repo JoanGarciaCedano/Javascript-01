@@ -47,7 +47,7 @@
 					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioGaleria">Galería</a></li>
 					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioMouse">Mouse</a></li>
 					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioScroll">Scroll</a></li>
-					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Formulario</a></li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioFormulario">Formulario</a></li>
 					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Angular</a></li>
 
 				</ul>
@@ -368,7 +368,7 @@
 			<article class="row">
 				
 				<div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
-				<br>
+					<br>
 				</div>
 
 				<aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
@@ -392,7 +392,7 @@
 				</aside>
 				
 				<div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
-				<br>
+					<br>
 				</div>
 
 			</article>
@@ -401,6 +401,80 @@
 		
 		<!--====  End of EFECTO DE SCROLL  ====-->
 		
+		<!--================================
+		=            FORMULARIO            =
+		=================================-->
+		
+		<h1 id="inicioFormulario" class="row titulos">
+			
+			<hr>
+			
+			VALIDACIÓN FORMULARIO
+
+			<hr>
+
+		</h1>
+		
+		<div id="formulario" class="row">
+			
+			<form method="post">
+				
+				<h1>Ingrese sus datos</h1>
+
+				<label for="nombre">Ingrese su usuario: </label>
+				<input id="nombre" type="text" placeholder="Escriba su usuario con mínimo 2 caracteres, máximo 6 caracteres" required>
+
+				<label for="password">Ingrese su contraseña: </label>
+				<input id="password" type="password" placeholder="Escriba su contraseña con mínimo 8 caracteres y debe incluir letras en mayúscula, en minúscula y números" required>
+
+				<label for="email">Ingrese su cooreo electrónico: </label>
+				<input id="email" type="email" placeholder="Escriba su correo correctamente" required>
+
+				<label for="color">Elija su color</label>
+				<select id="color">
+					<option>Seleccione</option>
+					<option>Amarillo</option>
+					<option>Rojo</option>
+					<option>Azul</option>
+				</select>
+
+				<br>
+
+				<hr>
+
+				<p>Seleccione Animal:</p>
+				<input type="checkbox" id="perro">
+				<label for="perro">Perro</label>
+				<input type="checkbox" id="gato">
+				<label for="gato">Gato</label>
+				<input type="checkbox" id="conejo">
+				<label for="conejo">Conejo</label>
+
+				<hr>
+
+				<p>Seleccione forma de pago:</p>
+				<input type="radio" id="efectivo">
+				<label for="efectivo">Efectivo</label>
+				<input type="radio" id="credito">
+				<label for="credito">Crédito</label>
+	
+				<br>
+
+				<hr>
+				
+				<label for="mensaje">Ingrese su Mensaje:</label>
+				<textarea id="mensaje" rows="10" required></textarea>
+
+				<input type="checkbox" id="terminos">
+				<label for="terminos"><a href="archivo.pdf" target="_blank">Acepto términos y condiciones</a></label>
+
+				<input type="submit" value="Enviar">
+
+			</form>
+
+		</div>
+
+		<!--====  End of FORMULARIO  ====-->
 		
 				
 	</div>
